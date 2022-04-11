@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="index.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problem - Kenzie Marathon</title>
+</head>
+
+<body>
+    <header>
+        <h1>Race Positions</h1>
+    </header>
+    <section id="demo">
+    </section>
+
+    <footer>
+        <p>
+            &copy; Clayson Roberto Eufrasio
+        </p>
+    </footer>
+
+    <script>
+
+        function positions(firstPlace, secondPlace, lastPlace) {
+            const participants = [firstPlace, secondPlace, lastPlace]
+            let newfirstPlace = participants[0]
+            let newsecondPlace = participants[1]
+            let newlastPlace = participants[2]
+            return `
+    <p> The first runner is ${newfirstPlace} </p>
+    <p> The second runner is ${newsecondPlace} </p>
+    <p> The last runner is ${newlastPlace} </p>
+    `
+        }
+        document.getElementById("demo").innerHTML = positions("Rafael", "Manoel", "Daniel")
+
+    </script>
+</body>
+
+</html>
