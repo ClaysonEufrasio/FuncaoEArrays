@@ -25,17 +25,15 @@
     <script>
 
         function positions(firstPlace, secondPlace, lastPlace) {
-            const participants = [firstPlace, secondPlace, lastPlace]
-            let newfirstPlace = participants[0]
-            let newsecondPlace = participants[1]
-            let newlastPlace = participants[2]
-            return `
-    <p> The first runner is ${newfirstPlace} </p>
-    <p> The second runner is ${newsecondPlace} </p>
-    <p> The last runner is ${newlastPlace} </p>
-    `
+            if (lastPlace === "Daniel") [firstPlace, secondPlace, lastPlace] = [firstPlace, lastPlace, secondPlace]
+            else if (secondPlace === "Daniel") [firstPlace, secondPlace, lastPlace] = [secondPlace, firstPlace, lastPlace]
+            else (firstPlace === "Daniel")[firstPlace, secondPlace, lastPlace] = [firstPlace, secondPlace, lastPlace]
+            return `<p> ${firstPlace} </p>
+            <p> ${secondPlace} </p>
+            <p> ${lastPlace} </p>`
         }
-        document.getElementById("demo").innerHTML = positions("Rafael", "Manoel", "Daniel")
+
+        document.getElementById("demo").innerHTML = positions("Manoel", "Camila", "Daniel")
 
     </script>
 </body>
