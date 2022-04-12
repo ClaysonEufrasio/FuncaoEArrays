@@ -26,14 +26,17 @@
 
         function positions(firstPlace, secondPlace, lastPlace) {
             if (lastPlace === "Daniel") [firstPlace, secondPlace, lastPlace] = [firstPlace, lastPlace, secondPlace]
+
             else if (secondPlace === "Daniel") [firstPlace, secondPlace, lastPlace] = [secondPlace, firstPlace, lastPlace]
+
             else (firstPlace === "Daniel")[firstPlace, secondPlace, lastPlace] = [firstPlace, secondPlace, lastPlace]
-            return `<p> ${firstPlace} </p>
-            <p> ${secondPlace} </p>
-            <p> ${lastPlace} </p>`
+
+            return `<p> The first place was ${firstPlace} </p>
+            <p> The second place was ${secondPlace} </p>
+            <p> The last place was ${lastPlace} </p>`
         }
 
-        document.getElementById("demo").innerHTML = positions("Manoel", "Camila", "Daniel")
+        document.getElementById("demo").innerHTML = positions("Rafael", "Manoel", "Daniel")
 
     </script>
 </body>

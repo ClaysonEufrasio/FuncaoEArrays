@@ -2,6 +2,12 @@ body {
     background-color: rgba(0, 119, 255, 0.997);
 }
 
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px 1px black;
+}
+
 section {
     background-color: white;
     width: 500px;
@@ -9,14 +15,11 @@ section {
     padding: 10px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);
     margin: auto;
-}
-
-h1 {
-    color: white;
     text-align: center;
 }
 
 footer {
     color: white;
     text-align: center;
+    text-shadow: 1px 1px 1px black;
 }
