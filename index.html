@@ -31,12 +31,20 @@
 
             else (firstPlace === "Daniel")[firstPlace, secondPlace, lastPlace] = [firstPlace, secondPlace, lastPlace]
 
+            console.log(`
+                The first place was ${firstPlace}
+                The second place was ${secondPlace}
+                The last place was ${lastPlace}
+            `)
+
             return `<p> The first place was ${firstPlace} </p>
             <p> The second place was ${secondPlace} </p>
             <p> The last place was ${lastPlace} </p>`
         }
 
         document.getElementById("demo").innerHTML = positions("Rafael", "Manoel", "Daniel")
+
+
 
     </script>
 </body>
